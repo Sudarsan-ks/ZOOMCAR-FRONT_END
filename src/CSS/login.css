@@ -1,0 +1,139 @@
+.LoginFormpage {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/carImage2.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.loginnav {
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-right: 20px;
+    height: 40px;
+}
+
+.loginnav button {
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    color: white;
+    border: none;
+}
+
+
+.loginheading {
+    text-align: center;
+}
+
+.loginheading p {
+    font-size: 10vw;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: green;
+}
+
+.loginform {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.login-form {
+    max-width: 300px;
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-forgot {
+    float: left;
+}
+
+.login-form-button {
+    width: 100%;
+}
+
+.registernow {
+    color: rgb(133, 224, 42);
+}
+
+.loginDescription {
+    display: flex;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.loginDescription span {
+    text-align: center;
+    color: azure;
+}
+
+.RegisterFormpage {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/carImgae1.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Registerheading {
+    text-align: center;
+}
+
+.Registerheading p {
+    font-size: 5vw;
+    color: beige;
+}
+
+.registerform {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.registerUsername .ant-form-item-label>label {
+    font-size: 1.5vw;
+}
+
+.registerEmail .ant-form-item-label>label {
+    font-size: 1.5vw;
+}
+
+.registerPassword .ant-form-item-label>label {
+    font-size: 1.5vw;
+}
+
+.registerRole .ant-form-item-label>label {
+    font-size: 1.5vw;
+}
+
+.register-button {
+    width: 7vw;
+    height: 3vw;
+    background-color: green;
+    color: black;
+    font-size: 1.5vw;
+}
+
+.registerDescription {
+    display: flex;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.registerDescription span {
+    text-align: center;
+    color: azure;
+
+}
