@@ -55,7 +55,7 @@ export function Payment() {
         <div className="Paymentpage">
             <div className="payment-nav">
                 <button onClick={() => navigate("/booking/read-booking")} ><i className="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
-                <h3>MAKE YOU PAYMENT</h3>
+                <p>MAKE YOU PAYMENT</p>
             </div>
             <div className='payment-content' >
                 <div className="payment-card">
