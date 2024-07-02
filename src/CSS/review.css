@@ -56,7 +56,7 @@
 .ReadReview {
     margin-top: 2%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
@@ -64,7 +64,7 @@
     border: 5px solid rgb(109, 128, 0);
     padding: 10px;
     background-color: burlywood;
-    height: 200px;
+    height: auto;
 }
 
 .name {
@@ -91,4 +91,22 @@
 .back-button button{
     background-color: black;
     color: aliceblue;
+}
+
+@media screen and (max-width: 576px) {
+    .review-form{
+        height: auto;
+    }
+
+    .ReadReview {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .button{
+       display: flex;
+       justify-content: center;
+       padding-right: 10%;
+    }
 }

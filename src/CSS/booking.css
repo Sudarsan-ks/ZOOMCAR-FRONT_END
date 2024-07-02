@@ -87,7 +87,7 @@
     height: 100%;
 }
 
-.readBookingCard .item{
+.readBookingCard .item {
     margin: 0%;
     padding: 20px;
     display: grid;
@@ -99,27 +99,27 @@
     overflow-x: auto;
 }
 
-.bookingCard{
+.bookingCard {
     border: 5px solid violet;
     padding: 10px;
     background-color: chartreuse;
-    height: 250px;
+    height: auto;
     border-radius: 20px;
 }
 
-.bookedName{
+.bookedName {
     text-align: center;
     color: red;
     margin-bottom: 10px;
 }
 
-.bookedBrand{
+.bookedBrand {
     text-align: center;
     color: blue;
     margin-bottom: 10px;
 }
 
-.bookedDates{
+.bookedDates {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -127,18 +127,18 @@
     padding-right: 40px;
 }
 
-.booketotalRent{
+.booketotalRent {
     text-align: center;
     color: rgb(255, 0, 225);
     margin-bottom: 10px;
 }
 
-.bookedPay{
+.bookedPay {
     text-align: center;
     margin-bottom: 10px;
 }
 
-.bookedPay button{
+.bookedPay button {
     background-color: red;
     color: azure;
     margin-top: 3%;
@@ -147,13 +147,13 @@
     border: none;
 }
 
-.edit-delete{
+.edit-delete {
     display: flex;
-    justify-content: end; 
+    justify-content: end;
     gap: 20px;
 }
 
-.edit-delete{
+.edit-delete {
     cursor: pointer;
 }
 
@@ -174,7 +174,58 @@
     align-items: center;
 }
 
-.input-date{
+.input-date {
     border-radius: 10px;
     background-color: rgb(211, 219, 112);
+}
+
+
+@media screen and (max-width: 576px) {
+    .booking-form {
+        width: 100%;
+        height: auto;
+        margin: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .readBookingCard .item {
+        margin: 0%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .bookingCard {
+        width: 100%;
+        height: auto;
+    }
+
+    .star-end-date {
+        display: flex;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        padding-right: 15%;
+    }
+
+    .user-name p {
+        font-size: 0.9em;
+    }
+
+    .button {
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .button-submit {
+        width: 100%;
+        margin-top: 10px;
+    }
 }

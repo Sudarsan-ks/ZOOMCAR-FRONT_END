@@ -49,8 +49,8 @@
     border: none;
 }
 
-.payment-nav h3 {
-    height: 25px;
+.payment-nav p {
+    font-size: 1.5vw;
     color: rgb(11, 11, 11);
 }
 
@@ -119,6 +119,7 @@
     display: flex;
     gap: 10px;
 }
+
 .paymentcurrency label b {
     color: rgb(12, 12, 12);
 }

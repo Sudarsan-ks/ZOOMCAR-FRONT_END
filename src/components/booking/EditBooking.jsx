@@ -54,7 +54,6 @@ export function EditBooking() {
     }
 
     const price = bookings.vehicle?.pricePerDay
-    console.log(price)
 
     const handlesave = async (value) => {
 
@@ -71,7 +70,6 @@ export function EditBooking() {
             endDate,
             totalPrice
         }
-        console.log(updatedDetails)
 
         try {
             const Book = await axios.put(`${API}/booking/edit-booking/${bookings._id}`, updatedDetails);
@@ -91,6 +89,8 @@ export function EditBooking() {
                 <Form
                     {...formItemLayout}
                     onFinish={handlesave}
+                    initialValues={{ startDate:bookings?.startDate?.split('T')[0],
+                         endDate: bookings?.endDate?.split('T')[0] }}
                     variant="filled"
                     className="booking-form"
                 >
@@ -109,7 +109,7 @@ export function EditBooking() {
                                 },
                             ]}
                         >
-                            <input type="date" defaultValue={bookings?.startDate?.split('T')[0]} 
+                            <input type="date"  
                                 min={present} required className='input-date' />
                         </Form.Item>
 
@@ -123,7 +123,7 @@ export function EditBooking() {
                                 },
                             ]}
                         >
-                            <input type="date" defaultValue={bookings?.endDate?.split('T')[0]}
+                            <input type="date" 
                                 min={present} required className='input-date' />
                         </Form.Item>
                     </div>
