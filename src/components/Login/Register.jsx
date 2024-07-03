@@ -92,8 +92,6 @@ export function Register() {
                                 At Zoomcar, we prioritize the security and privacy of your personal information. We use advanced encryption and security protocols to protect your data during transmission and storage. Our stringent access controls ensure that only authorized personnel have access to your information.
 
                                 We adhere to strict data protection standards and comply with all relevant regulations to safeguard your data. Your trust is important to us, and we are committed to maintaining the confidentiality and integrity of your information.
-
-                                By logging in, you agree to our Privacy Policy and Terms of Use, where you can learn more about how we collect, use, and protect your data. If you have any questions or concerns, our support team is here to assist you. Thank you for choosing Zoomcar.
                             </span>
                         </div>
                     </div>
