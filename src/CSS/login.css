@@ -103,25 +103,29 @@
 
 .registerUsername .ant-form-item-label>label {
     font-size: 1.5vw;
+    color: yellow;
 }
 
 .registerEmail .ant-form-item-label>label {
     font-size: 1.5vw;
+    color: yellow;
 }
 
 .registerPassword .ant-form-item-label>label {
     font-size: 1.5vw;
+    color: yellow;
 }
 
 .registerRole .ant-form-item-label>label {
     font-size: 1.5vw;
+    color: yellow;
 }
 
 .register-button {
     width: 7vw;
     height: 3vw;
-    background-color: green;
-    color: black;
+    background-color: rgb(128, 0, 51);
+    color: rgb(243, 242, 242);
     font-size: 1.5vw;
 }
 
@@ -136,4 +140,15 @@
     text-align: center;
     color: azure;
 
+}
+
+@media screen and (max-width: 576px){
+    .register-button {
+        width: 10vw;
+        height: 5vw;
+        background-color: rgb(128, 0, 51);
+        color: rgb(255, 254, 254);
+        font-size: 1.5vw;
+    }
+    
 }
