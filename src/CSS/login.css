@@ -124,8 +124,8 @@
 .register-button {
     width: 7vw;
     height: 3vw;
-    background-color: rgb(128, 0, 51);
-    color: rgb(243, 242, 242);
+    background-color: rgb(212, 255, 22);
+    color: rgb(15, 15, 15);
     font-size: 1.5vw;
 }
 
@@ -142,13 +142,13 @@
 
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     .register-button {
         width: 10vw;
         height: 5vw;
-        background-color: rgb(128, 0, 51);
-        color: rgb(255, 254, 254);
+        background-color: rgb(212, 255, 22);
+        color: rgb(15, 15, 15);
         font-size: 1.5vw;
     }
-    
+
 }

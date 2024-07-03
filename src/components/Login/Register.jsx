@@ -13,10 +13,9 @@ export function Register() {
         try {
             const res = await axios.post(`${API}/user/register`, values);
             message.success("Registered Successfully");
-            localStorage.setItem("user_register_data", JSON.stringify(res.data.user));
             navigate("/");
         } catch (error) {
-            message.error("This account is already registered");
+            message.error("This Username already registered");
         }
     };
 
@@ -31,7 +30,7 @@ export function Register() {
                         <div className="registerform">
                             <Form onFinish={onFinish}>
                                 <Form.Item
-                                    label="Username"
+                                    label="Username:"
                                     name="username"
                                     className="registerUsername"
                                     rules={[
@@ -42,7 +41,7 @@ export function Register() {
                                 </Form.Item>
 
                                 <Form.Item
-                                    label="Email"
+                                    label="Email:"
                                     name="email"
                                     className="registerEmail"
                                     rules={[
@@ -54,7 +53,7 @@ export function Register() {
                                 </Form.Item>
 
                                 <Form.Item
-                                    label="Password"
+                                    label="Create Password:"
                                     name="password"
                                     className="registerPassword"
                                     rules={[
@@ -65,7 +64,7 @@ export function Register() {
                                 </Form.Item>
 
                                 <Form.Item
-                                    label="Role"
+                                    label="Role:"
                                     name="role"
                                     className="registerRole"
                                     rules={[{ required: true, message: 'Please select your role' }]}
