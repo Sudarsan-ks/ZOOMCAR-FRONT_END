@@ -11,7 +11,7 @@ export function Register() {
 
     const onFinish = async (values) => {
         try {
-            const res = await axios.post(`${API}/user/register`, values);
+            await axios.post(`${API}/user/register`, values);
             message.success("Registered Successfully");
             navigate("/");
         } catch (error) {
