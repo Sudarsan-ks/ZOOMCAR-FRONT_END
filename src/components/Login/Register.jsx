@@ -15,7 +15,7 @@ export function Register() {
             message.success("Registered Successfully");
             navigate("/");
         } catch (error) {
-            message.error("This Username already registered");
+            message.error("This Email already registered");
         }
     };
 
