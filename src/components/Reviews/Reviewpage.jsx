@@ -67,7 +67,7 @@ export function Reviewpage() {
                         {vehicledata.brand}
                     </div>
                     <div className="vehicle-review">
-                        <Form.Item label="Radio" name="rating"
+                        <Form.Item label="Rating" name="rating"
                             rules={[
                                 {
                                     required: true,
@@ -84,7 +84,7 @@ export function Reviewpage() {
                         </Form.Item>
                     </div>
                     <div className="vehicle-comment">
-                        <Form.Item label="TextArea" name="comment"
+                        <Form.Item label="FeedBack" name="comment"
                             rules={[
                                 {
                                     required: true,
