@@ -11,7 +11,7 @@ export function LoginForm() {
 
     const onFinish = async (values) => {
         try {
-            const res = await axios.post(`${API}/user/login`, values)
+            await axios.post(`${API}/user/login`, values)
             message.success("Login Sucessfully")   
             navigate("/zoomcar")        
             localStorage.setItem("user_data", JSON.stringify(res.data.user))           
