@@ -11,10 +11,10 @@ export function LoginForm() {
 
     const onFinish = async (values) => {
         try {
-            await axios.post(`${API}/user/login`, values)
-            message.success("Login Sucessfully")   
-            navigate("/zoomcar")        
-            localStorage.setItem("user_data", JSON.stringify(res.data.user))           
+            const res = await axios.post(`${API}/user/login`, values)
+            message.success("Login Sucessfully")
+            navigate("/zoomcar")
+            localStorage.setItem("user_data", JSON.stringify(res.data.user))
         }
         catch (error) {
             message.error("Invalid Credential")
@@ -54,7 +54,7 @@ export function LoginForm() {
                                     <Button type="primary" htmlType="submit" className="login-form-button">
                                         Log in
                                     </Button>
-                                    Or <a href=""onClick={() => navigate("/register")} className="registernow" >register now!</a>
+                                    Or <a href="" onClick={() => navigate("/register")} className="registernow" >register now!</a>
                                 </Form.Item>
                             </Form>
                         </div>
