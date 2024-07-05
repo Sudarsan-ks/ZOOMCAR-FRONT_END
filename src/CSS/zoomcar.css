@@ -72,6 +72,15 @@
     bottom: 9%;
 }
 
+.logout-btn {
+    padding-right: 1vw;
+}
+
+.logout-btn i {
+    cursor: pointer;
+    color: rgb(15, 205, 212);
+}
+
 .display-car {
     margin: 0%;
     padding: 20px;
@@ -95,7 +104,7 @@
 .productCard {
     padding: 10px;
     display: flex;
-  height: auto;
+    height: auto;
     width: 600px;
     border: 5px solid yellowgreen;
     background-color: springgreen;
@@ -267,7 +276,7 @@
         height: 25%;
         color: black
     }
-    
+
     .productPriceperday i {
         position: absolute;
         top: 30px;
@@ -281,7 +290,7 @@
         width: 100%;
         height: 25%;
     }
-    
+
 }
 
 @media screen and (max-width: 576px) {
@@ -309,7 +318,7 @@
         height: 25%;
         color: black
     }
-    
+
     .productPriceperday i {
         position: absolute;
         top: 20px;
@@ -353,7 +362,7 @@
         height: 25%;
         color: black
     }
-    
+
     .productPriceperday i {
         position: absolute;
         top: 20px;

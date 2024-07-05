@@ -164,33 +164,36 @@ export function ZoomCar() {
                         </span>
                       </button>
                     </div>
+                    <div className="logout-btn">
+                      <i class="fa fa-sign-out" aria-hidden="true" onClick={() => navigate("/")} >Logout</i>
+                    </div>
                   </Header>
                   <Content className="contentStyle" >
                     <div className="display-car" >
                       {searchvalues && searchvalues.length > 0 ? (
                         searchvalues.map((res) => (
-                            <div className="productCard" key={res._id} >
-                              <div className="image-brand-model">
-                                <div className="productImage">
-                                  <img src={res.image} alt={res.brand} />
-                                </div>
-                                <div className="brand-model">
-                                  <div className="productBrand"><b>{res.brand}</b></div>
-                                  - <div className="productModel"><b>{res.model}</b></div>
-                                </div>
-                                <div className="review-button">
-                                  <button onClick={() => haldleReview(res)} ><u>reviews</u></button>
-                                </div>
+                          <div className="productCard" key={res._id} >
+                            <div className="image-brand-model">
+                              <div className="productImage">
+                                <img src={res.image} alt={res.brand} />
                               </div>
-                              <div className="year-catego-price">
-                                <div className="productYear"><b>YEAR</b> - <p><b>{res.year}</b></p></div>
-                                <div className="productCategory"><b>{res.category}</b></div>
-                                <div className="productPriceperday"><b>RENT PER DAY</b> -  <i className="fa fa-inr" aria-hidden="true"> <b>{res.pricePerDay}</b></i></div>
-                                <div className="productButton">
-                                  <button onClick={() => handelBooknow(res)} >Book Now</button>
-                                </div>
+                              <div className="brand-model">
+                                <div className="productBrand"><b>{res.brand}</b></div>
+                                - <div className="productModel"><b>{res.model}</b></div>
+                              </div>
+                              <div className="review-button">
+                                <button onClick={() => haldleReview(res)} ><u>reviews</u></button>
                               </div>
                             </div>
+                            <div className="year-catego-price">
+                              <div className="productYear"><b>YEAR</b> - <p><b>{res.year}</b></p></div>
+                              <div className="productCategory"><b>{res.category}</b></div>
+                              <div className="productPriceperday"><b>RENT PER DAY</b> -  <i className="fa fa-inr" aria-hidden="true"> <b>{res.pricePerDay}</b></i></div>
+                              <div className="productButton">
+                                <button onClick={() => handelBooknow(res)} >Book Now</button>
+                              </div>
+                            </div>
+                          </div>
                         ))
                       ) : (
                         <Skeleton active />
