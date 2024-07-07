@@ -115,6 +115,11 @@ export function ZoomCar() {
     }
   }
 
+  const handleLogout = ()=>{
+    localStorage.clear()
+    navigate("/")
+  }
+
   const treeData = tree;
 
   return <>
@@ -165,7 +170,7 @@ export function ZoomCar() {
                       </button>
                     </div>
                     <div className="logout-btn">
-                      <i class="fa fa-sign-out" aria-hidden="true" onClick={() => navigate("/")} >Logout</i>
+                      <i className="fa fa-sign-out" aria-hidden="true" onClick={() =>handleLogout()} >Logout</i>
                     </div>
                   </Header>
                   <Content className="contentStyle" >
