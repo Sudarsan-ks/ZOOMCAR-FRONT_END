@@ -21,7 +21,12 @@ export function ZoomCar() {
 
   const getVehicle = async () => {
     try {
-      const vehicle = await axios.get(`${API}/vehicle/get-vehicle`)
+      const token =  localStorage.getItem("token")
+      const vehicle = await axios.get(`${API}/vehicle/get-vehicle`, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      })
       setCarData(vehicle.data)
       setSearchvalues(vehicle.data)
     }
@@ -115,7 +120,7 @@ export function ZoomCar() {
     }
   }
 
-  const handleLogout = ()=>{
+  const handleLogout = () => {
     localStorage.clear()
     navigate("/")
   }
@@ -170,7 +175,7 @@ export function ZoomCar() {
                       </button>
                     </div>
                     <div className="logout-btn">
-                      <i className="fa fa-sign-out" aria-hidden="true" onClick={() =>handleLogout()} >Logout</i>
+                      <i className="fa fa-sign-out" aria-hidden="true" onClick={() => handleLogout()} >Logout</i>
                     </div>
                   </Header>
                   <Content className="contentStyle" >

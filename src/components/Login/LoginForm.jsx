@@ -15,6 +15,7 @@ export function LoginForm() {
             message.success("Login Sucessfully")
             navigate("/zoomcar")
             localStorage.setItem("user_data", JSON.stringify(res.data.user))
+            localStorage.setItem("token", res.data.token)
         }
         catch (error) {
             message.error("Invalid Credential")
