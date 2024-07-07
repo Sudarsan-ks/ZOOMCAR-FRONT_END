@@ -21,10 +21,10 @@ export function ZoomCar() {
 
   const getVehicle = async () => {
     try {
-      const token =  localStorage.getItem("token")
+      const token = localStorage.getItem("token")
       const vehicle = await axios.get(`${API}/vehicle/get-vehicle`, {
         headers: {
-          Authorization: `Bearer ${token}`
+          Authorization: token
         }
       })
       setCarData(vehicle.data)
