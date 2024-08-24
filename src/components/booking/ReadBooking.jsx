@@ -9,10 +9,14 @@ import { useEffect } from 'react'
 export function ReadBooking() {
 
   const dispatch = useDispatch();
-
+  const token = localStorage.getItem("token")
   const getBooking = async () => {
     try {
-      const response = await axios.get(`${API}/booking/get-booking`);
+      const response = await axios.get(`${API}/booking/get-booking`, {
+        headers: {
+          Authorization: token
+        }
+      });
       dispatch(setCartItems(response.data));
     } catch (error) {
       console.error('Error fetching booking data:', error);
@@ -95,7 +99,7 @@ export function ReadBooking() {
                 </div>
               </div>
             ))
-            ) : <Skeleton active/>
+            ) : <Skeleton active />
           }
         </div>
       </div>

@@ -18,10 +18,10 @@ export function ZoomCar() {
   const [carData, setCarData] = useState([]);
   const [filtervalue, serFiltervalue] = useState()
   const navigate = useNavigate();
+  const token = localStorage.getItem("token")
 
   const getVehicle = async () => {
     try {
-      const token = localStorage.getItem("token")
       const vehicle = await axios.get(`${API}/vehicle/get-vehicle`, {
         headers: {
           Authorization: token
