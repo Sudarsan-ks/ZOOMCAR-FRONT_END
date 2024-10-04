@@ -13,6 +13,8 @@ export function ZoomCar() {
 
   const cartItem = useSelector((state) => state.Car.cartItem)
   const [carData, setCarData] = useState([]);
+  const [search, setSearch] = useState("")
+  const [searchvalues, setSearchvalues] = useState([])
   const [filtervalue, serFiltervalue] = useState()
   const navigate = useNavigate();
   const token = localStorage.getItem("token")
@@ -70,10 +72,6 @@ export function ZoomCar() {
     }
 
   };
-
-
-  const [search, setSearch] = useState("")
-  const [searchvalues, setSearchvalues] = useState([])
 
   const handleSearch = (event) => {
     const SearchItem = event.target.value
