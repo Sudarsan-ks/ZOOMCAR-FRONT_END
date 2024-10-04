@@ -7,9 +7,6 @@ import { brand, tree, category, price, year, model } from "./data.jsx"
 import { useSelector } from "react-redux";
 
 
-
-
-
 const { Header, Sider, Content } = Layout;
 
 export function ZoomCar() {
