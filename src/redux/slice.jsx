@@ -29,6 +29,6 @@ export const productSlice = createSlice({
   }
 });
 
-export const { addToBook, deleteBook, editBook, setCartItems } = productSlice.actions;
+export const {deleteBook, editBook, setCartItems } = productSlice.actions;
 
 export default productSlice.reducer;
