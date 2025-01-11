@@ -46,7 +46,7 @@ export function ReadReview() {
           </div>
         ))
       ) : (
-        <Skeleton active />
+        <p>No Reviews for the Product</p>
       )}
     </div>
   );
